@@ -7,7 +7,7 @@ export const bg_secondary = {
 }
 
 export const bg = {
-    'background':'rgb( 26, 82, 118  )'
+    'background':'rgb(0, 0, 128 , 0.7)'
 }
 export const bg_footer = {
     'background':'rgb( 44, 62, 80 )'

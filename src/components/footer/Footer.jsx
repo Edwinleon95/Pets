@@ -17,7 +17,7 @@ export const Footer = () => {
                         <IconInstagram px={"30px"}/>
                     </div>
             </div>
-            <div className="d-none col-md-12 bg-dark text-white d-md-block mt-5 d-md-flex justify-content-around">
+            <div className="d-none col-md-12  text-white d-md-block mt-5 d-md-flex justify-content-around" style={bg_footer}>
                 <div className="p-3">
                     <div className="d-flex align-items-center">
                         <IconLogo px={'60px'} />
