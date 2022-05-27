@@ -8,13 +8,13 @@ import { bg_section } from "../../aux/style"
 export const SectionWalk = () => {
     const contentCardWalk = [{
         id: 1,
-        text: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-        description: 'Paseo grupal',
+        text: 'En este paseo tu amigo tendrá la oportunidad de hacer nuevos amigos en un grupo máximo de 5 mascotas.',
+        description: 'Programar paseo',
         image: image1
     }, {
         id: 2,
-        text: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-        description: 'Paseo personalizado',
+        text: 'En este paseo tu amigo estará solo con su paseador, este es recomendable para mascotas mayores y para mascotas con conducta agresiva.',
+        description: 'Programar paseo',
         image: image2
     }
     ]

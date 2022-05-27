@@ -11,7 +11,10 @@ export const Footer = () => {
     return (
         <>
             <div className="col-12  text-white d-md-none mt-5" style={bg_footer}>
+                <div className="d-flex align-items-center">
                 <IconLogo px={'40px'} />
+                <h5 className="m-0 p-0">WALKDOG</h5>
+                </div>
                 <h4>Nosotros</h4>
                     <h5>Redes sociales</h5>
                     <div className="d-flex justify-content-between" style={sizing}>
