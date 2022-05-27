@@ -10,8 +10,8 @@ export const Carrusel = () => {
         'height': '600px'
     }
     return (
-        <div className="d-none d-md-block col-md-12">
-            <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
+        <div className="d-none d-md-block col-md-12 mt-5">
+            <div id="carouselExampleCaptions" className="carousel slide mt-md-3 mt-lg-5" data-bs-ride="false">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>

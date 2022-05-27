@@ -5,13 +5,16 @@ import { IconLogo } from "../graphics/icons/Logo"
 import { IconWhatsapp } from "../graphics/icons/Whatsapp"
 
 export const Footer = () => {
+    const sizing = {
+        'width':'30%'
+    }
     return (
         <>
             <div className="col-12  text-white d-md-none mt-5" style={bg_footer}>
                 <IconLogo px={'40px'} />
                 <h4>Nosotros</h4>
                     <h5>Redes sociales</h5>
-                    <div className="d-flex">
+                    <div className="d-flex justify-content-between" style={sizing}>
                         <IconWhatsapp px={"30px"}/>
                         <IconFacebook px={"30px"}/>
                         <IconInstagram px={"30px"}/>
