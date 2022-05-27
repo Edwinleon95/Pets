@@ -1,4 +1,4 @@
-import welcome from '../graphics/images/welcome.jpg';
+import welcome from '../graphics/images/dogsHead.jpg';
 export const Head = () => {
 const style = {
 'object-fit': 'cover',
