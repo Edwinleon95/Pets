@@ -16,7 +16,9 @@ export const NavBar = () => {
                     <p className="fs-2 m-0">Paseo</p>
                     <p className="fs-2 m-0">Planes</p>
                 </div>
-                <IconLogIn px={'60px'} />
+                <figure className="mt-2">
+                    <IconLogIn px={'50px'} />
+                </figure>
             </div>
         </>
     )
