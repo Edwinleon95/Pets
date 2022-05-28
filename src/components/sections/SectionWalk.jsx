@@ -13,13 +13,13 @@ export const SectionWalk = () => {
         image: image1
     }, {
         id: 2,
-        text: 'En este paseo tu amigo estará solo con su paseador, este es recomendable para mascotas mayores y para mascotas con conducta agresiva.',
+        text: 'En este paseo tu amigo estará solo con su paseador, este es recomendable para mascotas mayores.',
         description: 'Programar paseo',
         image: image2
     }
     ]
     return (
-        <section className="row  pb-5 mt-5 shadow-sm d-flex justify-content-center" style={bg_section}>
+        <section id="paseos" className="row  pb-5 mt-5 shadow-sm d-flex justify-content-center" style={bg_section}>
                 <Title title={'Programa tu paseo'} />
                 {contentCardWalk.map(e => <CardWalk id={e.id}
                     text={e.text}

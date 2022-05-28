@@ -5,7 +5,7 @@ const style = {
 'filter': 'brightness(30%)',
 }
 return (
-<div className="col-12 mt-3 pt-5 d-md-none text-center card text-white bg-dark">
+<div className="col-12 mt-3 pt-5 d-md-none text-center card text-white bg-dark" id='head'>
     <img src={welcome} className="card-img w-100 " alt="Dogs" style={style} />
     <div className="card-img-overlay">
         <h1 className="card-title mt-5 fw-bold">WALKDOG</h1>

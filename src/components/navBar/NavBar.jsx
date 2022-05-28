@@ -1,34 +1,43 @@
 import { IconMenu } from "../graphics/icons/Menu"
 import { IconLogo } from "../graphics/icons/Logo"
-import { IconLogIn } from "../graphics/icons/LogIn"
 import { bg_primary } from "../../aux/style"
+import { Modal } from "../modal/Modal"
+import { useState } from "react"
 export const NavBar = () => {
+const [position,setPosition] = useState(true)
 
+const onClick = (e) => {
+ setPosition(false)
+}
+
+const onClose = (e) => {
+    setPosition(true)
+}
     return (
 
-        <nav class="navbar navbar-expand-lg fixed-top" style={bg_primary}>
-            <div class="container-fluid h-25">
-                <a className="navbar-brand" href='/'>
+        <nav className={`navbar navbar-expand-lg ${position?"fixed-top":null}`} style={bg_primary}>
+            <div className="container-fluid h-25">
+                <a classNameName="navbar-brand" href='/'>
                     <IconLogo px={'40px'} />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span><IconMenu px={'40px'} /></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-white fw-bold" href="/">Inicio</a>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li className="nav-item">
+                            <a className="nav-link text-white d-none d-md-block" href="#inicio">Inicio</a>
+                            <a className="nav-link text-white  d-md-none" href="#head">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-white fw-bold" aria-current="page" href="/">Paseo</a>
+                        <li className="nav-item">
+                            <a className="nav-link active text-white" aria-current="page" href="#paseos">Paseo</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fw-bold" href="/">Planes</a>
+                        <li className="nav-item">
+                            <a className="nav-link text-white" href="#planes">Planes</a>
                         </li>
                     </ul>
-                    <figure className="pt-3">
-                        <IconLogIn px={'60px'}/>
-                    </figure>
+                    <Modal onClick={onClick}
+                           onClose={onClose}/>
                 </div>
             </div>
         </nav>

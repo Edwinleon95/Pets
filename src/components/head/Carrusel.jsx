@@ -10,7 +10,7 @@ export const Carrusel = () => {
         'height': '800px'
     }
     return (
-        <div className="d-none d-md-block col-md-12 mt-5 p-5">
+        <div className="d-none d-md-block col-md-12 mt-5 p-5" id='inicio'>
             <div id="carouselExampleCaptions" className="carousel slide mt-md-3 mt-lg-5" data-bs-ride="false">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -29,14 +29,14 @@ export const Carrusel = () => {
                         <img src={carrusel2} className="d-block w-100" alt="carrusel2" style={sizing} />
                         <div className="carousel-caption d-none d-md-block">
                             <h1 className='fw-bold'>WALKDOG</h1>
-                            <p>.</p>
+                            <p>Aquí cuidamos a tus mascotas como si fueran nuestras, por eso estamos comprometidos a brindar el mejor paseo para ellos.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img src={carrusel1} className="d-block w-100" alt="carrusel3" style={sizing} />
                         <div className="carousel-caption d-none d-md-block">
                             <h1 className='fw-bold'>WALKDOG</h1>
-                            <p>Some representative placeholder content for the third slide.</p>
+                            <p>Los paseaderos están capacitados para ofrecerle una experiencia única a tu amigo.  </p>
                         </div>
                     </div>
                 </div>
